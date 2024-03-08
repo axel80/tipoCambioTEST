@@ -17,7 +17,8 @@ Tipos de cambio.
     <li>Base de datos MariaDB </li>
     <code>php artisan key:generate </code>
     <li>Base de datos MariaDB </li>
-    <code>php artisan key:generate </code>
+    <li>Para migraciones una vez conectado </li>
+    <code>php artisan migrate:fresh </code>
     <li>Uso de vuejs2 </li>
     <li>Archivos claves</li>
         <ul>
