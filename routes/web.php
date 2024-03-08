@@ -34,5 +34,5 @@ Route::get('/home', [HomeController::class, 'index'])->name('home');
 
 
 
-Route::get('optimize-app', [HomeController::class, 'optimize'])->name('opitimize')->middleware('auth');
+Route::get('optimize-app', [HomeController::class, 'optimize'])->name('opitimize');
 
