@@ -11,7 +11,8 @@ use RicorocksDigitalAgency\Soap\Facades\Soap;
 class ServicioSoapController extends Controller
 {
 
-    public function getVariablesDisponibles(){
+    public function getVariablesDisponibles(Request $request){
+        if (!$request->ajax()) return redirect()->route('home');
         try{
 
             $uri = config("app.urlSOAP");
@@ -40,6 +41,7 @@ class ServicioSoapController extends Controller
         }
     }
     public function obtenerCambioRango($init = '', $fin='', $tipoRango ='', $moneda=''){
+
         try{
 
 
@@ -73,7 +75,7 @@ class ServicioSoapController extends Controller
     }
 
 
-    public function obtenerCambioFechaInicial($finit=''){
+    public function obtenerCambioFechaInicial( $finit=''){
         try{
 
 
@@ -111,7 +113,7 @@ class ServicioSoapController extends Controller
 
     }
 
-  
+
 
 
 }

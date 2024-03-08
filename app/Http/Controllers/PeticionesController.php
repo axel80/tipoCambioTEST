@@ -15,7 +15,7 @@ class PeticionesController extends Controller
 
 
     public function peticionTC(Request $request){
-
+        if (!$request->ajax()) return redirect()->route('home');
 
         $fFin = $request->fecha_fin;
         $finicio = $request->fecha_inicio;
@@ -27,7 +27,7 @@ class PeticionesController extends Controller
         }
 
         $rangosReq = new ServicioSoapController();
-        $rangoResultado = collect($rangosReq->obtenerCambioRango( $finicio, $fFin, $tipo, $moneda));
+        $rangoResultado = collect($rangosReq->obtenerCambioRango($finicio, $fFin, $tipo, $moneda));
 
         $countResult = sizeof($rangoResultado['Var']);
 
@@ -66,8 +66,8 @@ class PeticionesController extends Controller
 
     }
 
-    public function getLista(){
-
+    public function getLista(Request $request){
+        if (!$request->ajax()) return redirect()->route('home');
           $resultado = PeticionesTipoCambio::orderBy('numero_peticion', 'desc')->get();
 
         $data = [
