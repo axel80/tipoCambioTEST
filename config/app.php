@@ -14,6 +14,7 @@ return [
     */
 
     'name' => env('APP_NAME', 'Laravel'),
+    "urlSOAP" => "https://www.banguat.gob.gt/variables/ws/TipoCambio.asmx?wsdl",
 
     /*
     |--------------------------------------------------------------------------

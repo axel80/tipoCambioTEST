@@ -22,7 +22,7 @@ return [
 
     'logo_job_apply' => 'storage/sistem/img/Logo-hd-f-c.png',
 
-    'title' => 'SIS-APP',
+    'title' => 'TC-APP',
     'title_prefix' => '',
     'title_postfix' => '',
 
@@ -71,7 +71,7 @@ return [
     |
     */
     'logo_auth' => '',
-    'logo' => '<b>SIS</b>APP',
+    'logo' => '<b>TC-</b>APP',
     'logo_img' => 'storage/sistem/img/Logo.png',
     'logo_img_class' => 'brand-image img-circle elevation-3',
     'logo_img_xl' => null,

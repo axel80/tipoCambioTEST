@@ -41,7 +41,7 @@ class MenuFillableHelper
                             [
                                 'text' => 'Consultas',
                                 'icon' => 'fas fa-hand-holding-usd',
-                                'url'  => '#'
+                                'url'  => '/peticiones'
                             ],
 
 

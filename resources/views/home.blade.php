@@ -1,23 +1,12 @@
 @extends('adminlte::page')
 
-@section('content')
-    <div class="container-fluid">
-        <div class="row justify-content-center">
-            <div class="col-md-12 mt-3">
-                <div class="card">
-                    <div class="card-header">Dashboard alertas boton de pánico</div>
+@section('title', 'Tipo cambio consultas')
 
-                    <div class="card-body">
                         {{-- <home-component></home-component> --}}
 
-                        <home-component></home-component>
+@section('content')
+                        <peticiones></peticiones>
 
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 @endsection
 
 
